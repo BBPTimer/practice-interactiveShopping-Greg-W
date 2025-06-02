@@ -5,6 +5,10 @@ const itemText = document.getElementById("itemText");
 const groceryList = document.getElementById("groceryList");
 
 function createListItem(input) {
+    if(input === "") {
+        return;
+    }
+
     //Create list item
     const item = document.createElement("li");
     item.innerHTML = input;
